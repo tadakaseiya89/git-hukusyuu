@@ -7,9 +7,9 @@
 </head>
 
 <body>
-	<form action="finished.html" th:action="@{/ex07/calc}" method="post">
+	<form action="finished.html" th:action="@{/ex07/calc}" method="post" th:object="${EX07form}">
 		２つの数字を入力してください
-		<input type="text" name="num1">×<input type="text" name="num2"><br>
+		<input type="text" name="num1" th:field="*{num1}">×<input type="text" name="num2" th:field="*{num2}"><br>
 		<button>計算</button>
 	</form>
 </body>
