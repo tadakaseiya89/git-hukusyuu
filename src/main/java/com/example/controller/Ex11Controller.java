@@ -35,5 +35,4 @@ public class Ex11Controller {
 	public String output2() {
 		return "ex-11-output2";
 	}
-
 }
