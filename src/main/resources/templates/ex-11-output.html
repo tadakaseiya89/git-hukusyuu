@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>ユーザー情報</h1><br>
+	名前：<span　th:text="${application.user.name}">dummy</span><br>
+	年齢：<span　th:text="${application.user.age}">dummy</span><br>
+	コメント：<span　th:text="${application.user.comment}">dummy</span><br>
+	<a href="ex-11-output2.html" th:href="@{/ex11/output3}">output2.htmlへリンク</a>
+</body>
